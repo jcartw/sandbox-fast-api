@@ -70,7 +70,7 @@ async def read_items(q: str = Query(None, alias="item-query")):
         results.update({"q": q})
     return results
 
-# deprecated
+# deprecate a query param
 @app.get("/items-h/")
 async def read_items(
     q: str = Query(
